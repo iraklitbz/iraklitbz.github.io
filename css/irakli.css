@@ -113,15 +113,15 @@ img {
 }
 .my {
     text-align: center !important;
-    max-width: 800px;
+    max-width: 1000px;
     margin: -120px auto 0px auto;
     float: none;
     padding: 1em;
 
 }
 .my p {
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 34px;
+    line-height: 40px;
     color: #73726d;
      font-family: 'Raleway', sans-serif;
 }
