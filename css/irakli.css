@@ -403,6 +403,8 @@ color: #4F8EF7
 
 
 @media (max-width: 800px){
+ 
+
     #presentation hgroup {
     top: -120px;
 }
