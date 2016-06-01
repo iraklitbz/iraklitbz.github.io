@@ -1,6 +1,7 @@
 /*irakli tavberidze; 2016*/
 body {
-  background-color: #23261f; }
+  background-color: #23261f;
+  height: 100% !important; }
 
 header {
   margin-top: 40px;

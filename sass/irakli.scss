@@ -4,9 +4,9 @@ $darkcolor: #23261f;
 $secdarkcolor: #272b23;
 $maincolor: #e15b64;
 $hovercolor: #4F8EF7;
-
 body {
   background-color: $darkcolor;
+  height: 100%!important;
 }
 
 header {
