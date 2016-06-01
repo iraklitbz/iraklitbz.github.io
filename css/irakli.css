@@ -49,7 +49,7 @@ header {
     line-height: 40px;
     color: #a9a9a9;
     font-family: 'Raleway', sans-serif; }
-    .me p span {
+    .me p .red {
       color: #e15b64; }
   .me .contactme {
     margin-top: 5px;
@@ -87,6 +87,9 @@ footer {
       top: 7px; }
 
 @media (max-width: 800px) {
+  .none {
+    display: none; }
+
   header {
     margin-top: 0px;
     padding: 310px 0px 310px 0px;
@@ -111,6 +114,8 @@ footer {
       line-height: 27px;
       text-align: justify;
       text-justify: newspaper !important; }
+      .me p span {
+        text-align: center; }
     .me .contactme ul li a {
       font-size: 4em;
       padding: 8px; } }

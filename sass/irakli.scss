@@ -68,7 +68,7 @@ header {
     line-height: 40px;
     color: #a9a9a9;
     font-family: 'Raleway', sans-serif;
-    span {
+    .red {
       color: $maincolor;
     }
  }
@@ -128,6 +128,9 @@ footer {
 
 
 @media (max-width: 800px){
+  .none {
+    display: none
+  }
   header {
     margin-top: 0px;
     padding: 310px 0px 310px 0px;
@@ -159,6 +162,10 @@ p{
     text-align: justify;
     text-justify: newspaper!important;
 
+    span {
+      text-align: center
+    }
+
 
 }
  .contactme ul li a {
@@ -168,5 +175,6 @@ p{
 
   }  
 }
+
 
 
