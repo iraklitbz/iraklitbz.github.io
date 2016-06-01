@@ -86,11 +86,17 @@
 
 
   <script type="text/javascript">
+  if (!$.browser.mobile){
     var s = skrollr.init({
-      'forceHeight': false
+      'forceHeight': false,
+      'smoothScrolling':true
     });
+  }
 
-    smoothScrolling=true
+
+
+
+
     </script>
 
     <script>
