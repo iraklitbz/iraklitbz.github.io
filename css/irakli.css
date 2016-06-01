@@ -84,6 +84,15 @@ footer {
       top: 7px; }
 
 @media (max-width: 800px) {
+  header {
+    margin-top: 0px;
+    padding: 310px 0px 310px 0px;
+    position: fixed;
+    width: 100%; }
+
+  .aboutme {
+    top: 360px; }
+
   .me {
     margin-top: -100px; }
     .me h1 {
