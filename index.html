@@ -86,9 +86,12 @@
 
 
 
-    <script>
-    alert(skrollr.isMobile);    
-    skrollr.init();
+    <script>    
+    var s = skrollr.init();
+
+    if(s.isMobile()){
+      s.destroy();
+    }
     $('#toggle').click(function() {
        $(this).toggleClass('active');
        $('#overlay').toggleClass('open');
