@@ -90,8 +90,8 @@ footer {
   header {
     margin-top: 0px;
     padding: 310px 0px 310px 0px;
-    background-position: top left;
-    background-position-x: -17px; }
+    background-position: top center;
+    margin-left: -17px; }
 
   .aboutme {
     top: 328px; }
@@ -104,10 +104,13 @@ footer {
     .me h1 {
       font-size: 3.3em; }
     .me h2 {
-      font-size: 2em; }
+      font-size: 2em;
+      margin-bottom: 15px; }
     .me p {
       font-size: 20px;
-      line-height: 27px; }
+      line-height: 27px;
+      text-align: justify;
+      text-justify: newspaper !important; }
     .me .contactme ul li a {
       font-size: 4em;
       padding: 8px; } }

@@ -131,8 +131,8 @@ footer {
   header {
     margin-top: 0px;
     padding: 310px 0px 310px 0px;
-        background-position: top left;
-            background-position-x: -17px;
+        background-position: top center;
+            margin-left: -17px;
   }
 
   .aboutme {
@@ -150,11 +150,15 @@ footer {
 
 h2 {
   font-size: 2em;
+  margin-bottom: 15px;
 }
 
 p{
     font-size: 20px;
     line-height: 27px;
+    text-align: justify;
+    text-justify: newspaper!important;
+
 
 }
  .contactme ul li a {
@@ -164,4 +168,5 @@ p{
 
   }  
 }
+
 
