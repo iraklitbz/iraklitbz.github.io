@@ -1,7 +1,6 @@
 /*irakli tavberidze; 2016*/
 body {
-  background-color: #23261f;
-  height: 100% !important; }
+  background-color: #23261f; }
 
 header {
   margin-top: 40px;
@@ -83,9 +82,5 @@ footer {
     footer p span {
       position: relative;
       top: 7px; }
-
-@media (max-width: 800px) {
-  body {
-    height: auto !important; } }
 
 /*# sourceMappingURL=irakli.css.map */

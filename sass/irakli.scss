@@ -6,7 +6,6 @@ $maincolor: #e15b64;
 $hovercolor: #4F8EF7;
 body {
   background-color: $darkcolor;
-  height: 100%!important;
 }
 
 header {
@@ -126,10 +125,4 @@ footer {
 
 
 
-
-@media (max-width: 800px){
-body {
-  height: auto!important;
-}
- }
 
