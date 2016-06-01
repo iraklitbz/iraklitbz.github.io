@@ -60,6 +60,7 @@ header {
     color: #fff;
     font-family: 'Raleway', sans-serif;
     margin-top: 0px;
+        margin-bottom: 40px;
  } 
 
  p {
@@ -109,7 +110,6 @@ header {
 
 footer {
   text-align: center;
-  background-color: $darkcolor;
 
   p {
         text-align: center;
@@ -131,10 +131,12 @@ footer {
   header {
     margin-top: 0px;
     padding: 310px 0px 310px 0px;
+        background-position: top left;
+            background-position-x: -17px;
   }
 
   .aboutme {
-    top: 360px;
+    top: 328px;
     img{
       width: 230px;
         top: -72px;
@@ -143,18 +145,23 @@ footer {
   .me{ 
     margin-top: -75px;
     h1 {
-    font-size: 3.6em;
+    font-size: 3.3em;
 }
 
 h2 {
-  font-size: 2em
+  font-size: 2em;
 }
 
 p{
-    font-size: 24px;
-    line-height: 31px;
+    font-size: 20px;
+    line-height: 27px;
 
 }
+ .contactme ul li a {
+      font-size: 4em;
+    padding: 8px;
+ }
+
   }  
 }
 

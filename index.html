@@ -31,7 +31,7 @@
 
 </head>
 <body>
-<div class="container-fluid" id="general">
+<div class="container-fluid" id="general" data-0="opacity:1" data-280="opacity:0">
     <header class="cabecera">
       <h2>Irakli Tavberidze</h2>
 
@@ -40,7 +40,7 @@
 
     </div>
 
-    <div class="container-fluid aboutme" id="presentation" data-0="top:500px" data-200="top:0px">
+    <div class="container-fluid aboutme">
       <img src="images/mano.png">
 
       <div class="me">
@@ -87,6 +87,7 @@
 
 
     <script>
+    skrollr.init();
     $('#toggle').click(function() {
        $(this).toggleClass('active');
        $('#overlay').toggleClass('open');

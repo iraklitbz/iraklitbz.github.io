@@ -42,7 +42,8 @@ header {
     font-size: 3em;
     color: #fff;
     font-family: 'Raleway', sans-serif;
-    margin-top: 0px; }
+    margin-top: 0px;
+    margin-bottom: 40px; }
   .me p {
     font-size: 34px;
     line-height: 40px;
@@ -73,8 +74,7 @@ header {
             color: #4F8EF7; }
 
 footer {
-  text-align: center;
-  background-color: #23261f; }
+  text-align: center; }
   footer p {
     text-align: center;
     color: #fff;
@@ -89,10 +89,12 @@ footer {
 @media (max-width: 800px) {
   header {
     margin-top: 0px;
-    padding: 310px 0px 310px 0px; }
+    padding: 310px 0px 310px 0px;
+    background-position: top left;
+    background-position-x: -17px; }
 
   .aboutme {
-    top: 360px; }
+    top: 328px; }
     .aboutme img {
       width: 230px;
       top: -72px; }
@@ -100,11 +102,14 @@ footer {
   .me {
     margin-top: -75px; }
     .me h1 {
-      font-size: 3.6em; }
+      font-size: 3.3em; }
     .me h2 {
       font-size: 2em; }
     .me p {
-      font-size: 24px;
-      line-height: 31px; } }
+      font-size: 20px;
+      line-height: 27px; }
+    .me .contactme ul li a {
+      font-size: 4em;
+      padding: 8px; } }
 
 /*# sourceMappingURL=irakli.css.map */
