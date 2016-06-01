@@ -84,7 +84,7 @@ footer {
       position: relative;
       top: 7px; }
 
-@media (min-width: 800px) {
+@media (max-width: 800px) {
   body {
     height: auto !important; } }
 
