@@ -16,6 +16,8 @@ header {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+    position: fixed;
+    width: 100%;
   h2 {
     display: none;
   }
@@ -27,6 +29,7 @@ header {
   background-color: $secdarkcolor;
   position: absolute;
   width: 100%;
+  top: 500px;
   z-index: 9999;
   img {
     position: relative;
@@ -128,17 +131,19 @@ footer {
   header {
     margin-top: 0px;
     padding: 310px 0px 310px 0px;
-    position: fixed;
-    width: 100%;
   }
 
   .aboutme {
     top: 360px;
+    img{
+      width: 230px;
+        top: -72px;
+    }
   }
   .me{ 
-    margin-top: -100px;
+    margin-top: -75px;
     h1 {
-    font-size: 3.2em;
+    font-size: 3.6em;
 }
 
 h2 {
