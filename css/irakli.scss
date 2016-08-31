@@ -4,6 +4,7 @@ $darkcolor: #23261f;
 $secdarkcolor: #272b23;
 $maincolor: #e15b64;
 $hovercolor: #4F8EF7;
+$yellow: #fbf65e;
 body {
   background-color: $darkcolor;
 }
@@ -49,7 +50,7 @@ header {
 
   h1{
     font-size: 9em;
-    color: $maincolor;
+    color: $yellow;
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
     letter-spacing: 0em;
@@ -175,6 +176,24 @@ p{
 
   }  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
