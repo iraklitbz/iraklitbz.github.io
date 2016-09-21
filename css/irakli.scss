@@ -1,13 +1,14 @@
 /*irakli tavberidze; 2016*/
 
-$darkcolor: #23261f;
-$secdarkcolor: #272b23;
-$maincolor: #e15b64;
+$darkcolor: #13121b;
+$secdarkcolor: #313143;
+$maincolor: #fbf65e;
 $hovercolor: #4F8EF7;
 $yellow: #fbf65e;
 body {
   background-color: $darkcolor;
 }
+
 
 header {
   margin-top: 40px;
@@ -23,6 +24,7 @@ header {
     display: none;
   }
 }
+
 
 
 .aboutme {
@@ -50,7 +52,7 @@ header {
 
   h1{
     font-size: 9em;
-    color: $yellow;
+    color: #1a1829;
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
     letter-spacing: 0em;
@@ -58,7 +60,7 @@ header {
 
  h2 {
        font-size: 3em;
-    color: #fff;
+    color: #717186;
     font-family: 'Raleway', sans-serif;
     margin-top: 0px;
         margin-bottom: 40px;
