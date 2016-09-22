@@ -3,7 +3,7 @@
 $darkcolor: #13121b;
 $secdarkcolor: #313143;
 $maincolor: #fbf65e;
-$hovercolor: #4F8EF7;
+$hovercolor: #fbf65e;
 $yellow: #fbf65e;
 body {
   background-color: $darkcolor;
@@ -48,28 +48,29 @@ header {
 .my {
   max-width: 1000px;
   margin: 0 auto;
+  text-align: justify;
 }
 
   h1{
-    font-size: 9em;
+    font-size: 9.7em;
     color: #1a1829;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Baloo Thambi', cursive;
     font-weight: 900;
     letter-spacing: 0em;
   }
 
  h2 {
        font-size: 3em;
-    color: #717186;
-    font-family: 'Raleway', sans-serif;
+    color: #403f52;
+   font-family: 'Source Code Pro', monospace;
     margin-top: 0px;
         margin-bottom: 40px;
  } 
 
  p {
-      font-size: 34px;
-    line-height: 40px;
-    color: #a9a9a9;
+      font-size: 38px;
+    line-height: auto;
+    color: #717186;
     font-family: 'Raleway', sans-serif;
     .red {
       color: $maincolor;
@@ -131,6 +132,7 @@ footer {
 
 
 @media (max-width: 800px){
+
   .none {
     display: none
   }
@@ -143,6 +145,11 @@ footer {
 
   .aboutme {
     top: 328px;
+    .logoirakli {
+      top:0px!important;
+      margin-bottom: 15px;
+      width: 50px!important;
+    }
     img{
       width: 230px;
         top: -72px;
@@ -157,6 +164,7 @@ footer {
 h2 {
   font-size: 2em;
   margin-bottom: 15px;
+
 }
 
 p{
@@ -179,6 +187,11 @@ p{
   }  
 }
 
+.aboutme .logoirakli {
+  top:-10px;
+  margin-bottom: 15px;
+  width: 80px;
+}
 
 
 

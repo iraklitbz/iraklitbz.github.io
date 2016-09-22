@@ -31,23 +31,24 @@ header {
   margin-top: -120px; }
   .me .my {
     max-width: 1000px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    text-align: justify; }
   .me h1 {
-    font-size: 9em;
+    font-size: 9.7em;
     color: #1a1829;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Baloo Thambi', cursive;
     font-weight: 900;
     letter-spacing: 0em; }
   .me h2 {
     font-size: 3em;
-    color: #717186;
-    font-family: 'Raleway', sans-serif;
+    color: #403f52;
+    font-family: 'Source Code Pro', monospace;
     margin-top: 0px;
     margin-bottom: 40px; }
   .me p {
-    font-size: 34px;
-    line-height: 40px;
-    color: #a9a9a9;
+    font-size: 38px;
+    line-height: auto;
+    color: #717186;
     font-family: 'Raleway', sans-serif; }
     .me p .red {
       color: #fbf65e; }
@@ -71,7 +72,7 @@ header {
           -o-transition: color 0.2s linear;
           transition: color 0.2s linear; }
           .me .contactme ul li a:hover {
-            color: #4F8EF7; }
+            color: #fbf65e; }
 
 footer {
   text-align: center; }
@@ -98,6 +99,10 @@ footer {
 
   .aboutme {
     top: 328px; }
+    .aboutme .logoirakli {
+      top: 0px !important;
+      margin-bottom: 15px;
+      width: 50px !important; }
     .aboutme img {
       width: 230px;
       top: -72px; }
@@ -119,5 +124,9 @@ footer {
     .me .contactme ul li a {
       font-size: 4em;
       padding: 8px; } }
+.aboutme .logoirakli {
+  top: -10px;
+  margin-bottom: 15px;
+  width: 80px; }
 
 /*# sourceMappingURL=irakli.css.map */
