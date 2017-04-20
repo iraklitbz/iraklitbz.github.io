@@ -8,13 +8,12 @@ $yellow: #fbf65e;
 $red: #ef5350;
 body {
   background-color: $secdarkcolor;
+   background-image: url('../images/bk.png');
+    background-repeat: repeat;
 }
 
-
 header {
-  margin-top: 40px;
   padding: 380px 0px 380px 0px;
-    background-color: $secdarkcolor;
   background-image: url('../images/dali.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -26,8 +25,6 @@ header {
   }
 }
 
-
-
 .aboutme {
   text-align: center;
   background-color: #ddd;
@@ -36,6 +33,7 @@ header {
   top: 500px;
   z-index: 9999;
   img {
+
     position: relative;
     top: -90px;
     max-width: 100%
@@ -145,6 +143,7 @@ font-weight: bold;
 footer {
   text-align: center;
   background-color: $secdarkcolor;
+  position: relative;
 
   p {
         text-align: center;
@@ -195,6 +194,7 @@ footer {
 h2 {
  font-size: 4em!important;
   top:-17px!important;
+
 
 
 }

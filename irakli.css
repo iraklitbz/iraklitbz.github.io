@@ -1,11 +1,11 @@
 /*irakli tavberidze; 2016*/
 body {
-  background-color: #252526;
-  background-image: url("../images/bk.png");
-  background-repeat: repeat; }
+  background-color: #252526; }
 
 header {
+  margin-top: -100px;
   padding: 380px 0px 380px 0px;
+  background-color: #252526;
   background-image: url("../images/dali.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -23,6 +23,7 @@ header {
   top: 500px;
   z-index: 9999; }
   .aboutme img {
+    opacity: 0;
     position: relative;
     top: -90px;
     max-width: 100%; }
@@ -102,8 +103,7 @@ header {
 
 footer {
   text-align: center;
-  background-color: #252526;
-  position: relative; }
+  background-color: #252526; }
   footer p {
     text-align: center;
     color: #fff;

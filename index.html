@@ -34,8 +34,10 @@
 
 </head>
 <body>
-<div class="container-fluid" id="general" data-0="opacity:1" data-280="opacity:0">
+<div class="aside">
+  <div class="container-fluid" id="general" data-0="opacity:1" data-280="opacity:0">
     <header class="cabecera">
+      <div class="dali"></div>
       <h2>Irakli Tavberidze</h2>
 
     </header>
@@ -52,6 +54,7 @@
          <h2>Designer &amp; Frontend developer</h2>
       
             </hgroup>
+
 
             <section class="my">
 
@@ -74,8 +77,9 @@
          <li><a href="https://www.instagram.com/ika_87/" target="_blank"><span>instagram</span><i class="ion-social-instagram" aria-hidden="true"></i></a></li>
       </ul>
 </nav>
-
       </div>
+  
+
 
       <footer>
             <p>I <span class="livicon" data-name="heart" data-s="25" data-c="rgba(203, 69, 82)" data-hc="rgba(203, 69, 82)" data-et="hover">
@@ -83,6 +87,7 @@
           </footer>
 
     </div>
+  </div>
 </body>
 
 
@@ -92,6 +97,7 @@
     <script src="js/raphael-min.js"></script>
     <script src="js/skrollr.min.js"></script>
     <script src="js/mobile.js"></script>
+        <script src="js/move.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 
@@ -106,12 +112,24 @@
        $(this).toggleClass('active');
        $('#overlay').toggleClass('open');
       });
-    </script>
 
-     <script>
-    $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
+            $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      });
+
+/*$(document).ready(function() {
+var movementStrength = 25;
+var height = movementStrength / $(window).height();
+var width = movementStrength / $(window).width();
+$(".dali").mousemove(function(e){
+          var pageX = e.pageX - ($(window).width() / 2);
+          var pageY = e.pageY - ($(window).height() / 2);
+          var newvalueX = width * pageX * -1 - 25;
+          var newvalueY = height * pageY * -1 - 50;
+          $('.dali').css("background-position", newvalueX+"px     "+newvalueY+"px");
+});
+});*/
+
     </script>
 
 </html>
