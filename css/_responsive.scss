@@ -1,0 +1,53 @@
+@media (max-width: 979px) {
+    .headline-goup {
+        padding: 40px 10px;
+    }
+    .container {
+        padding: 60px;
+    }
+    .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .aboutme {
+        padding: 0px;
+    }
+    h2.headline.magenta {
+        color: $magenta;
+        white-space: initial
+    }
+
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 30px;
+    }
+    .social-net {
+        margin-top: 28px;
+        text-align: center
+    }
+    h2.headline {
+      font-size: 26px
+    }
+
+    .visible-xs {
+        display: block
+    }
+
+    .mobile-deco {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 10px;
+        width: 100%;
+        background-color: $blue;
+    }
+
+    
+}
+
+@media (max-width: 480px) {
+}
