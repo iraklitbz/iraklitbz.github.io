@@ -239,25 +239,38 @@ body {
     color: #F92561;
     white-space: initial; } }
 @media (max-width: 767px) {
+  .aboutme {
+    position: relative;
+    top: -60px; }
+
+  .headline-goup .headline {
+    font-size: 15px; }
+
+  .content-box .max-width {
+    font-size: 15px; }
+
+  .content-box {
+    padding: 95px 19px; }
+
   .container {
     padding: 30px; }
 
-  .social-net {
-    margin-top: 28px;
-    text-align: center; }
-
-  h2.headline {
-    font-size: 26px; }
-
-  .visible-xs {
-    display: block; }
-
-  .mobile-deco {
-    position: absolute;
+  .headline-goup {
+    position: relative;
     top: 0px;
-    left: 0px;
-    height: 10px;
-    width: 100%;
-    background-color: #0098ED; } }
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px; }
+
+  .content-box {
+    padding: 45px 19px; }
+
+  .headline-goup {
+    top: -83px;
+    width: 81%;
+    margin: auto; }
+
+  .prymary-content {
+    margin-top: -90px; } }
 
 /*# sourceMappingURL=style.css.map */
