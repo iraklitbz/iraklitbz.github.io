@@ -34,243 +34,50 @@ td, th {
   padding: 0;
   text-align: left; }
 
-body {
-  position: relative;
-  top: 0px; }
-  body .general {
-    height: 100vh;
-    width: 100%;
-    background-color: #fff; }
-
-/*NAvBAR*/
-.home {
-  position: fixed;
-  top: 30px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  width: 100%; }
-
-.portfolio {
-  position: fixed;
-  top: 0px;
-  left: 30px;
-  text-align: center;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .portfolio a {
-    transform-origin: 0 0;
-    transform: rotate(-90deg) translate(-50%, 0); }
-
-.about {
-  position: fixed;
-  top: 0px;
-  right: 30px;
-  text-align: center;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .about a {
-    transform-origin: 100% 0;
-    transform: rotate(90deg) translate(50%, 0); }
-
-.contact {
-  position: fixed;
-  bottom: 30px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  width: 100%; }
-
-.main-navbar li {
-  list-style: none;
-  position: fixed;
-  z-index: 9999; }
-.main-navbar a {
-  font-size: 280%;
-  text-decoration: none;
-  font-family: 'Share Tech Mono', monospace; }
-  .main-navbar a:after {
-    content: "";
-    display: block;
-    height: 4px;
-    width: 0%;
-    background-color: #2727E6;
-    transition: width 0.2s linear; }
-  .main-navbar a:hover:after {
-    width: 100%;
-    transition: width 0.2s linear; }
-.main-navbar .active a:after {
-  content: "";
-  display: block;
-  height: 4px;
-  width: 100%;
-  background-color: #2727E6;
-  transition: width 0.2s linear; }
-
-.aboutme {
-  width: 100%;
-  position: absolute;
-  top: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  height: 100vh; }
-
-.content-box {
-  padding: 95px 45px;
-  font-family: 'Roboto Mono', monospace;
-  position: relative;
-  z-index: 2000; }
-  .content-box .lines {
-    position: absolute;
-    width: calc(100% - 40px);
-    height: calc(100% - 40px);
-    top: 20px;
-    left: 20px;
-    border: 1px solid #fff;
-    z-index: 90; }
-  .content-box:before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    background-color: #2727E6;
-    z-index: 20; }
-  .content-box:after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 20px;
-    left: 20px;
-    background-color: #EC407A;
-    z-index: 10; }
-  .content-box .max-width {
-    width: 100%;
-    max-width: 900px;
-    font-size: 160%;
-    position: relative;
-    z-index: 9998; }
-    .content-box .max-width h1 {
-      color: #fff;
-      text-align: center; }
-    .content-box .max-width p {
-      line-height: 1.5;
-      color: #fff;
-      padding: 0 15px;
-      margin-bottom: 25px; }
-
-.social-net {
-  text-align: center; }
-  .social-net li {
-    display: inline-block; }
-  .social-net a {
-    font-size: 170%;
-    color: #fff; }
-
-.headline-goup {
-  position: relative;
-  top: -93px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 25px; }
-  .headline-goup .bk-headline {
-    padding: 2px 25px;
-    background-color: #2727E6; }
-  .headline-goup .headline {
-    font-size: 25px; }
-  .headline-goup span {
-    display: block; }
-
-.btn {
-  background: #fff;
-  color: #2727E6;
-  padding: 5px 25px;
-  text-decoration: none;
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weight: bold; }
-  .btn .btnTwo {
-    display: none; }
-
-.btn.active {
-  content: "Volver"; }
-
-.slide2 {
-  display: none; }
-
-.prymary-content.active .slide1 {
-  display: none; }
-.prymary-content.active .slide2 {
-  margin-bottom: 50px;
-  display: block; }
-
-.btn.active .btnOne {
-  display: none; }
-.btn.active .btnTwo {
-  display: inline; }
-
+/*
+Autor: Irakli Tavberidze
+Version: 3.0
+Description: Personal web page.
+*/
 @media (max-width: 979px) {
   .headline-goup {
     padding: 40px 0px; }
-
   .container {
     padding: 60px; }
-
   .flex {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start; }
-
   .aboutme {
     padding: 0px; }
-
   h2.headline.magenta {
     color: #F92561;
     white-space: initial; } }
+
 @media (max-width: 767px) {
   .aboutme {
     position: relative;
     top: -60px; }
-
   .headline-goup .headline {
     font-size: 15px; }
-
   .content-box .max-width {
     font-size: 15px; }
-
   .content-box {
     padding: 95px 19px; }
-
   .container {
     padding: 30px; }
-
   .headline-goup {
     position: relative;
     top: 0px;
     display: flex;
     justify-content: center;
     margin-bottom: 0px; }
-
   .content-box {
     padding: 45px 19px; }
-
   .headline-goup {
     top: -83px;
     width: 81%;
     margin: auto; }
-
   .prymary-content {
     margin-top: -90px; } }
-
-/*# sourceMappingURL=style.css.map */
