@@ -10,7 +10,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/style.css" media="all" />
 <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bungee+Outline" rel="stylesheet"> 
 <script src="https://unpkg.com/vue"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 <script>
@@ -33,40 +34,28 @@
           <li class="portfolio"><a href="#">Portfolio</a></li>
           <li class="about"><a href="#">Me</a></li>
           <li class="contact"><a href="#">Contact</a></li>
+          <span>Designer & Frontend developer</span>
       </ul>-->
     </nav>
+    <aside class="main-aside">
+      <div class="headline-goup">
+        <h1 class="headline"><b>Irakli</b> <div class="surname"><span>tbz</span></div></h1>
+      </div>
+      <ul class="social-net">
+        <li><a href="https://twitter.com/irakli_87"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://github.com/iraklitbz"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/irakli-tavberidze-47ba0338/"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+    </aside>
     <div class="container">
-      <div class="flex">
+
         <section class="aboutme">
-          <div class="center content-box">
-            <div class="lines"></div>
-            <div class="max-width">
-                <div class="headline-goup">
-                    <h1 class="headline"><span class="bk-headline"><b>Irakli Tbz</b> <span>Designer & Frontend developer</span></span></h1>
-                 </div>
-              <div class="prymary-content" v-bind:class="{ active: isActive }">
-                <div class="slide1">
+     
                   <p>_Hi. I'm Irakli. A web & graphic designer based in Madrid. Specialized in <strong>brand identity</strong>, <strong>UX design</strong>, <strong>interactive design</strong> and <strong>business development</strong>.</p>
                   <p>A huge music lover, gamer and passionate photographer.</p>
-               </div>
-               <div class="slide2">
-                  <ul class="social-net">
-                      <li><a href="https://twitter.com/irakli_87"><i class="fab fa-twitter"></i></a></li>
-                      <li><a href="https://github.com/iraklitbz"><i class="fab fa-github"></i></a></li>
-                      <li><a href="https://www.linkedin.com/in/irakli-tavberidze-47ba0338/"><i class="fab fa-linkedin"></i></a></li>
-                    </ul>
-               </div>
-            </div>
-              <center><a v-on:click="activeBtn" id="BTN" href="#" class="btn" v-bind:class="{ active: isActive }"><span class="btnOne">Contact</span><span class="btnTwo">Return</span></a></center>
-              <!--<ul class="social-net">
-                <li><a href="https://twitter.com/irakli_87"><span class="hidden">twitter</span><i class="icon ion-social-twitter"></i></a></li>
-                <li><a href="https://github.com/iraklitbz"><span class="hidden">github</span><i class="icon ion-social-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/irakli-tavberidze-47ba0338/"><span class="hidden">linkedin</span><i class="icon ion-social-linkedin"></i></a></li>
-              </ul>-->
-            </div>
-          </div>
+          
         </section>
-      </div>
+
     </div>
    
   </div>

@@ -6,4 +6,69 @@ Version: 3.0
 Description: Personal web page.
 */
 
+body {
+  background-color: #252734;
+}
+
+.main-aside {
+  max-width: 340px;
+  width: 100%;
+  background-color: #2D3040;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.social-net {
+  text-align: center;
+  padding: 10px;
+  li {
+  display: inline-block;
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+  a {
+    color: #fff;
+    font-size: 30px;
+  }
+  }
+}
+
+.headline-goup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  .headline {
+    font-size: 50px;
+    color: #f7f7f7;
+    font-family: 'Bungee Outline', cursive;
+    
+   b {
+    position: relative;
+    z-index: 2;
+   }
+  }
+  .surname {
+    width: 100%;
+    position: absolute;
+    color: #777;
+    left: 0px;
+    top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    
+    span {
+      font-size: 180px;
+    writing-mode:tb-rl;
+    color: #252734;
+    font-family: 'Bungee Outline', cursive;
+    }
+  }
+}
+
 @import "responsive";
