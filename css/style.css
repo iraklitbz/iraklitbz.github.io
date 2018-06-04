@@ -40,17 +40,39 @@ Version: 3.0
 Description: Personal web page.
 */
 body {
-  background-color: #252734; }
+  background-color: #eee; }
 
 .main-aside {
   max-width: 340px;
   width: 100%;
-  background-color: #2D3040;
+  background-color: #ddd;
   height: 100vh;
   position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
+
+.container {
+  width: calc(100% - 340px);
+  position: relative;
+  left: 340px;
+  height: 100%; }
+
+.aboutme {
+  padding: 30px; }
+  .aboutme p {
+    color: #333;
+    font-size: 30px; }
+  .aboutme h3 {
+    text-align: left;
+    color: #333;
+    font-size: 45px;
+    margin-bottom: 25px; }
+  .aboutme .important {
+    text-align: left;
+    color: tomato;
+    margin-top: 35px;
+    font-size: 40px; }
 
 .social-net {
   text-align: center;
@@ -60,7 +82,7 @@ body {
     .social-net li:not(:last-child) {
       margin-right: 20px; }
     .social-net li a {
-      color: #fff;
+      color: #2d3040;
       font-size: 30px; }
 
 .headline-goup {
@@ -70,26 +92,34 @@ body {
   margin-top: 20px; }
   .headline-goup .headline {
     font-size: 50px;
-    color: #f7f7f7;
-    font-family: 'Bungee Outline', cursive; }
+    color: #2d3040;
+    font-family: "Bungee Outline", cursive; }
     .headline-goup .headline b {
       position: relative;
       z-index: 2; }
   .headline-goup .surname {
     width: 100%;
     position: absolute;
-    color: #777;
+    color: #2d3040;
     left: 0px;
-    top: 100px;
+    top: 57px;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1; }
     .headline-goup .surname span {
-      font-size: 180px;
-      writing-mode: tb-rl;
-      color: #252734;
-      font-family: 'Bungee Outline', cursive; }
+      font-size: 100px;
+      color: rgba(0, 0, 0, 0.2);
+      font-family: "Bungee Outline", cursive; }
+
+.rounded {
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  overflow: hidden;
+  border: 5px solid #fff;
+  margin: auto;
+  margin-bottom: 25px; }
 
 @media (max-width: 979px) {
   .headline-goup {
@@ -108,28 +138,40 @@ body {
     white-space: initial; } }
 
 @media (max-width: 767px) {
+  .main-aside {
+    position: initial !important;
+    height: auto;
+    width: 100%;
+    max-width: 100%; }
+  .headline-goup {
+    top: 0px;
+    width: 100%;
+    padding: 10px 0px; }
+  .headline-goup .headline {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+  .headline-goup .surname {
+    all: initial; }
+  .container {
+    position: relative;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    margin-top: 50px; }
   .aboutme {
     position: relative;
     top: -60px; }
   .headline-goup .headline {
-    font-size: 15px; }
+    font-size: 60px; }
   .content-box .max-width {
     font-size: 15px; }
   .content-box {
     padding: 95px 19px; }
   .container {
     padding: 30px; }
-  .headline-goup {
-    position: relative;
-    top: 0px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0px; }
   .content-box {
     padding: 45px 19px; }
-  .headline-goup {
-    top: -83px;
-    width: 81%;
-    margin: auto; }
   .prymary-content {
     margin-top: -90px; } }

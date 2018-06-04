@@ -1,59 +1,73 @@
 @media (max-width: 979px) {
-    .headline-goup {
-        padding: 40px 0px;
-    }
-    .container {
-        padding: 60px;
-    }
-    .flex {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-    .aboutme {
-        padding: 0px;
-    }
-    h2.headline.magenta {
-        color: $magenta;
-        white-space: initial
-    }
-
+  .headline-goup {
+    padding: 40px 0px;
+  }
+  .container {
+    padding: 60px;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .aboutme {
+    padding: 0px;
+  }
+  h2.headline.magenta {
+    color: $magenta;
+    white-space: initial;
+  }
 }
 
 @media (max-width: 767px) {
-    .aboutme {
-        position: relative;
-            top: -60px;
-    }
-    .headline-goup .headline {
-        font-size: 15px;
-    }
-   .content-box .max-width {
-        font-size: 15px;
-    }
-    .content-box {
-        padding: 95px 19px;
-    }
-    .container {
-        padding: 30px;
-    }
-    .headline-goup {
-        position: relative;
-        top: 0px;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 0px;
-    }
-    .content-box {
-        padding: 45px 19px;
-    }
-    .headline-goup {
-        top: -83px;
-        width: 81%;
-        margin: auto;
-    }
-    .prymary-content {
-        margin-top: -90px;
-    }
+  .main-aside {
+    position: initial !important;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+  .headline-goup {
+    top: 0px;
+    width: 100%;
+    padding: 10px 0px;
+  }
+  .headline-goup .headline {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .headline-goup .surname {
+    all: initial;
+  }
+  .container {
+    position: relative;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .aboutme {
+    position: relative;
+    top: -60px;
+  }
+  .headline-goup .headline {
+    font-size: 60px;
+  }
+  .content-box .max-width {
+    font-size: 15px;
+  }
+  .content-box {
+    padding: 95px 19px;
+  }
+  .container {
+    padding: 30px;
+  }
+  .content-box {
+    padding: 45px 19px;
+  }
+  .prymary-content {
+    margin-top: -90px;
+  }
 }
