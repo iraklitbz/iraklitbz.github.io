@@ -34,144 +34,142 @@ td, th {
   padding: 0;
   text-align: left; }
 
-/*
-Autor: Irakli Tavberidze
-Version: 3.0
-Description: Personal web page.
-*/
+/*fonts*/
 body {
-  background-color: #eee; }
+  background-color: #f3f3f3;
+  font-family: "Dosis", sans-serif; }
 
-.main-aside {
-  max-width: 340px;
-  width: 100%;
-  background-color: #ddd;
-  height: 100vh;
-  position: fixed;
-  display: flex;
-  flex-direction: column;
+.main-grid {
+  display: grid;
+  grid-template-areas: "main-header main-header main-portfolio main-portfolio main-portfolio" "main-header main-header main-portfolio main-portfolio main-portfolio" "main-header main-header main-portfolio main-portfolio main-portfolio" "main-footer main-footer main-footer main-footer main-footer";
+  grid-auto-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 1fr 1fr 1fr 50px;
+  height: 100vh; }
+
+.flex {
+  display: flex; }
+
+.algin-center {
+  align-items: center;
+  justify-content: center; }
+
+.justify-content-center {
+  justify-content: center; }
+
+.justify-content-between {
   justify-content: space-between; }
 
-.container {
-  width: calc(100% - 340px);
-  position: relative;
-  left: 340px;
-  height: 100%; }
+.justify-content-around {
+  justify-content: space-around; }
 
-.aboutme {
-  padding: 30px; }
-  .aboutme p {
-    color: #333;
-    font-size: 30px; }
-  .aboutme h3 {
-    text-align: left;
-    color: #333;
-    font-size: 45px;
-    margin-bottom: 25px; }
-  .aboutme .important {
-    text-align: left;
-    color: tomato;
-    margin-top: 35px;
-    font-size: 40px; }
+.social-net li {
+  padding: 0 5px; }
 
-.social-net {
-  text-align: center;
-  padding: 10px; }
-  .social-net li {
-    display: inline-block; }
-    .social-net li:not(:last-child) {
-      margin-right: 20px; }
-    .social-net li a {
-      color: #2d3040;
-      font-size: 30px; }
+.icon svg {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+  transition: fill 0.2s linear; }
+.icon:hover svg {
+  fill: #12aaff; }
 
-.headline-goup {
+header {
+  grid-area: main-header;
+  width: 100%;
+  padding: 0 55px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-top: 20px; }
-  .headline-goup .headline {
-    font-size: 50px;
-    color: #2d3040;
-    font-family: "Bungee Outline", cursive; }
-    .headline-goup .headline b {
-      position: relative;
-      z-index: 2; }
-  .headline-goup .surname {
-    width: 100%;
-    position: absolute;
-    color: #2d3040;
-    left: 0px;
-    top: 57px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1; }
-    .headline-goup .surname span {
-      font-size: 100px;
-      color: rgba(0, 0, 0, 0.2);
-      font-family: "Bungee Outline", cursive; }
+  background-color: #fff; }
 
-.rounded {
-  border-radius: 50%;
-  width: 140px;
-  height: 140px;
+.main-portfolio {
+  grid-area: main-portfolio;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
   overflow: hidden;
-  border: 5px solid #fff;
-  margin: auto;
-  margin-bottom: 25px; }
-
-@media (max-width: 979px) {
-  .headline-goup {
-    padding: 40px 0px; }
-  .container {
-    padding: 60px; }
-  .flex {
+  position: relative; }
+  .main-portfolio .box-shots {
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start; }
-  .aboutme {
-    padding: 0px; }
-  h2.headline.magenta {
-    color: #F92561;
-    white-space: initial; } }
+    position: absolute; }
+    .main-portfolio .box-shots .shots {
+      flex: 0 0 100%;
+      display: flex;
+      flex-wrap: wrap; }
+      .main-portfolio .box-shots .shots .shots-header {
+        width: 100%;
+        height: 50%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative; }
+        .main-portfolio .box-shots .shots .shots-header .bk {
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: top center;
+          -webkit-filter: blur(8px);
+          -moz-filter: blur(8px);
+          -o-filter: blur(8px);
+          -ms-filter: blur(8px);
+          filter: blur(18px);
+          position: absolute;
+          left: 0px;
+          top: 0px; }
+        .main-portfolio .box-shots .shots .shots-header img {
+          position: relative;
+          z-index: 1;
+          border: 2px solid #fff; }
+      .main-portfolio .box-shots .shots .shots-footer {
+        width: 100%;
+        height: 50%;
+        background-color: #333;
+        padding: 25px; }
 
-@media (max-width: 767px) {
-  .main-aside {
-    position: initial !important;
-    height: auto;
-    width: 100%;
-    max-width: 100%; }
-  .headline-goup {
-    top: 0px;
-    width: 100%;
-    padding: 10px 0px; }
-  .headline-goup .headline {
-    font-size: 15px;
+footer {
+  grid-area: main-footer;
+  background-color: #333;
+  padding: 10px 0;
+  width: 100%; }
+
+h1 {
+  font-size: 50px;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 25px; }
+  h1 span {
+    font-weight: bold; }
+
+.me-story p {
+  font-size: 30px;
+  color: #555; }
+
+/*carrusel*/
+.controls {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100; }
+  .controls .contol {
+    width: 49%;
+    height: 90px;
+    background-color: #fff;
     display: flex;
     align-items: center;
-    flex-direction: column; }
-  .headline-goup .surname {
-    all: initial; }
-  .container {
-    position: relative;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    margin-top: 50px; }
-  .aboutme {
-    position: relative;
-    top: -60px; }
-  .headline-goup .headline {
-    font-size: 60px; }
-  .content-box .max-width {
-    font-size: 15px; }
-  .content-box {
-    padding: 95px 19px; }
-  .container {
-    padding: 30px; }
-  .content-box {
-    padding: 45px 19px; }
-  .prymary-content {
-    margin-top: -90px; } }
+    justify-content: center; }
+    .controls .contol svg {
+      width: 50px;
+      height: 50px;
+      fill: #333;
+      transition: fill 0.2s linear; }
+    .controls .contol:hover svg {
+      fill: #12aaff; }
+
+/*# sourceMappingURL=style.css.map */

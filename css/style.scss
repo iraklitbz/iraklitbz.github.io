@@ -1,110 +1,180 @@
 @import "reset";
 @import "colors";
-/*
-Autor: Irakli Tavberidze
-Version: 3.0
-Description: Personal web page.
-*/
 
 body {
-  background-color: #eee;
+  background-color: $grey-5;
+  font-family: $font;
 }
 
-.main-aside {
-  max-width: 340px;
-  width: 100%;
-  background-color: #ddd;
+.main-grid {
+  display: grid;
+  grid-template-areas:
+    "main-header main-header main-portfolio main-portfolio main-portfolio"
+    "main-header main-header main-portfolio main-portfolio main-portfolio"
+    "main-header main-header main-portfolio main-portfolio main-portfolio"
+    "main-footer main-footer main-footer main-footer main-footer";
+  grid-auto-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 1fr 1fr 1fr 50px;
   height: 100vh;
-  position: fixed;
+}
+.flex {
   display: flex;
-  flex-direction: column;
+}
+.algin-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-between {
   justify-content: space-between;
 }
-
-.container {
-  width: calc(100% - 340px);
-  position: relative;
-  left: 340px;
-  height: 100%;
-}
-
-.aboutme {
-  padding: 30px;
-  p {
-    color: #333;
-    font-size: 30px;
-  }
-  h3 {
-    text-align: left;
-    color: #333;
-    font-size: 45px;
-    margin-bottom: 25px;
-  }
-  .important {
-    text-align: left;
-    color: tomato;
-    margin-top: 35px;
-    font-size: 40px;
-  }
+.justify-content-around {
+  justify-content: space-around;
 }
 
 .social-net {
-  text-align: center;
-  padding: 10px;
   li {
-    display: inline-block;
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
-    a {
-      color: #2d3040;
-      font-size: 30px;
+    padding: 0 5px;
+  }
+}
+
+.icon {
+  svg {
+    width: 30px;
+    height: 30px;
+    fill: $white;
+    transition: fill 0.2s linear;
+  }
+  &:hover {
+    svg {
+      fill: $main-color-lighter;
     }
   }
 }
 
-.headline-goup {
+header {
+  grid-area: main-header;
+  width: 100%;
+  padding: 0 55px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  .headline {
-    font-size: 50px;
-    color: #2d3040;
-    font-family: "Bungee Outline", cursive;
+  background-color: $white;
+}
 
-    b {
-      position: relative;
-      z-index: 2;
+.main-portfolio {
+  grid-area: main-portfolio;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  position: relative;
+  .box-shots {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    .shots {
+      flex: 0 0 100%;
+      display: flex;
+      flex-wrap: wrap;
+      .shots-header {
+        width: 100%;
+        height: 50%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        .bk {
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: top center;
+          -webkit-filter: blur(8px);
+          -moz-filter: blur(8px);
+          -o-filter: blur(8px);
+          -ms-filter: blur(8px);
+          filter: blur(18px);
+          position: absolute;
+          left: 0px;
+          top: 0px;
+        }
+        img {
+          position: relative;
+          z-index: 1;
+          border: 2px solid $white;
+        }
+      }
+      .shots-footer {
+        width: 100%;
+        height: 50%;
+        background-color: $dark-1;
+        padding: 25px;
+      }
     }
   }
-  .surname {
-    width: 100%;
-    position: absolute;
-    color: #2d3040;
-    left: 0px;
-    top: 57px;
+}
+
+footer {
+  grid-area: main-footer;
+  background-color: $dark-1;
+  padding: 10px 0;
+  width: 100%;
+}
+
+h1 {
+  font-size: 50px;
+  color: $dark-1;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+
+  span {
+    font-weight: bold;
+  }
+}
+.me-story {
+  p {
+    font-size: 30px;
+    color: $dark-3;
+  }
+}
+
+/*carrusel*/
+.controls {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+  .contol {
+    width: 49%;
+    height: 90px;
+    background-color: $white;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1;
-
-    span {
-      font-size: 100px;
-      color: rgba(0, 0, 0, 0.2);
-      font-family: "Bungee Outline", cursive;
+    svg {
+      width: 50px;
+      height: 50px;
+      fill: $dark-1;
+      transition: fill 0.2s linear;
+    }
+    &:hover {
+      svg {
+        fill: $main-color-lighter;
+      }
     }
   }
 }
-
-.rounded {
-  border-radius: 50%;
-  width: 140px;
-  height: 140px;
-  overflow: hidden;
-  border: 5px solid #fff;
-  margin: auto;
-  margin-bottom: 25px;
+@media (max-width: 979px) {
 }
 
-@import "responsive";
+@media (max-width: 767px) {
+}

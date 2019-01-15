@@ -1,7 +1,22 @@
-$blue: #0098ED;
-$magenta: #F92561;
-$dark: #333;
-$grey: #ddd;
-$smooth-grey: #eee;
-$white: #FAFAFA;
-$green: #00BDA6;
+$main-color: #0098ed;
+$main-color-lighter: lighten($main-color, 7%);
+$main-color-dark: darken($main-color, 7%);
+$dark-1: #333;
+$dark-2: #444;
+$dark-3: #555;
+$dark-4: #777;
+$grey-1: #aaa;
+$grey-2: #ccc;
+$grey-3: #ddd;
+$grey-4: #eee;
+$grey-5: #f3f3f3;
+$white: #fff;
+$green: #00bda6;
+$green-lighter: lighten($green, 7%);
+$green-dark: darken($green, 7%);
+$red: #f92561;
+$red-lighter: lighten($red, 7%);
+$red-dark: darken($red, 7%);
+
+/*fonts*/
+$font: "Dosis", sans-serif;
