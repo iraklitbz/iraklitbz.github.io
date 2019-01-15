@@ -76,6 +76,8 @@ header {
     height: 100%;
     display: flex;
     position: absolute;
+    left: 0%;
+    transition: left 0.2s ease-in;
     .shots {
       flex: 0 0 100%;
       display: flex;

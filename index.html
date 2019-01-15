@@ -67,7 +67,7 @@
         </div>
       </header>
       <div class="main-portfolio">
-        <div class="box-shots">
+        <div ref="carrusel" class="box-shots">
           <div class="shots" v-for="shot in shots">
             <div class="shots-header">
               <div
@@ -83,31 +83,31 @@
                 <span v-for="tags in shot.tags">{{ tags }}</span>
               </div>
             </div>
-            <div class="controls">
-              <a href="#" class="contol prev">
-                <svg
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8.862 4.195l-3.805 3.805 3.805 3.805 0.943-0.943-2.862-2.862 2.862-2.862z"
-                  ></path>
-                </svg>
-              </a>
-              <a href="#" class="contol next">
-                <svg
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M7.138 11.805l3.805-3.805-3.805-3.805-0.943 0.943 2.862 2.862-2.862 2.862z"
-                  ></path>
-                </svg>
-              </a>
-            </div>
           </div>
+        </div>
+        <div class="controls">
+          <a v-on:click="item++" href="#" class="contol prev">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8.862 4.195l-3.805 3.805 3.805 3.805 0.943-0.943-2.862-2.862 2.862-2.862z"
+              ></path>
+            </svg>
+          </a>
+          <a v-on:click="item--" href="#" class="contol next">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M7.138 11.805l3.805-3.805-3.805-3.805-0.943 0.943 2.862 2.862-2.862 2.862z"
+              ></path>
+            </svg>
+          </a>
         </div>
       </div>
       <footer class="main-footer">
@@ -169,7 +169,8 @@
     var app = new Vue({
       el: "#app",
       data: {
-        shots: []
+        shots: [],
+        item: 0
       },
       created() {
         /*getting shots from dribbble*/
@@ -181,13 +182,20 @@
           )
           .then(function(response) {
             // handle success
-            console.log(response.data);
             _self.shots = response.data;
           })
           .catch(function(error) {
             // handle error
             console.log(error);
           });
+      },
+      watch: {
+        item: (n, o) => {
+          console.log(o);
+          console.log(n);
+
+          app.$refs.carrusel.style.left = `${n * 100}%`;
+        }
       }
     });
   </script>
