@@ -70,11 +70,9 @@
         <div ref="carrusel" class="box-shots">
           <div class="shots" v-for="shot in shots">
             <div class="shots-header">
-              <div
-                class="bk"
-                v-bind:style="{'background-image': 'url(' + shot.images.normal + ')'}"
-              ></div>
-              <img :src="shot.images.normal" :alt="shot.title" />
+              <figure>
+                <img :src="shot.images.normal" :alt="shot.title" />
+              </figure>
             </div>
             <div class="shots-footer">
               <h4>{{ shot.title }}</h4>
@@ -191,10 +189,16 @@
       },
       watch: {
         item: (n, o) => {
-          console.log(o);
-          console.log(n);
-
-          app.$refs.carrusel.style.left = `${n * 100}%`;
+          var lengthArray = -app.shots.length;
+          console.log("length", lengthArray);
+          console.log("new", n);
+          if (n > lengthArray) {
+            app.$refs.carrusel.style.left = `${n * 100}%`;
+          } else if (n === lengthArray) {
+            app.$refs.carrusel.classList.add("finish");
+          } else {
+            n === lengthArray;
+          }
         }
       }
     });
