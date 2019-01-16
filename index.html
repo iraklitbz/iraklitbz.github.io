@@ -66,6 +66,7 @@
           </section>
         </div>
       </header>
+      <div class="main-me"></div>
       <div class="main-portfolio">
         <div ref="carrusel" class="box-shots">
           <div class="shots" v-for="shot in shots">
@@ -76,7 +77,7 @@
             </div>
             <div class="shots-footer">
               <h4>{{ shot.title }}</h4>
-              <p>{{ shot.description }}</p>
+              <p>{{ shot.description | stripTags }}</p>
               <div class="tags">
                 <span v-for="tags in shot.tags">{{ tags }}</span>
               </div>
@@ -189,16 +190,19 @@
       },
       watch: {
         item: (n, o) => {
-          var lengthArray = -app.shots.length;
-          console.log("length", lengthArray);
-          console.log("new", n);
-          if (n > lengthArray) {
-            app.$refs.carrusel.style.left = `${n * 100}%`;
-          } else if (n === lengthArray) {
-            app.$refs.carrusel.classList.add("finish");
-          } else {
-            n === lengthArray;
-          }
+          var lengthArray = (app.shots.length - 1) * -1;
+
+          if (n < lengthArray || n > 0) app.item = o;
+
+          app.$refs.carrusel.style.left = `${n * 100}%`;
+        }
+      },
+      filters: {
+        stripTags: string => {
+          var div = document.createElement("div");
+          div.innerHTML = string;
+          var text = div.textContent || div.innerText || "";
+          return text;
         }
       }
     });
