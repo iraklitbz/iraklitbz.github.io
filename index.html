@@ -52,6 +52,7 @@
 
   <body>
     <div id="app" class="main-grid">
+      <div class="before-header"></div>
       <header class="main-header">
         <div class="me">
           <h1 class="headline">irakli <span>tbz</span></h1>
@@ -85,7 +86,7 @@
           </div>
         </div>
         <div class="controls">
-          <a v-on:click="item++" href="#" class="contol prev">
+          <a ref="prev" v-on:click="item++" href="#" class="contol prev">
             <svg
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +97,7 @@
               ></path>
             </svg>
           </a>
-          <a v-on:click="item--" href="#" class="contol next">
+          <a ref="next" v-on:click="item--" href="#" class="contol next">
             <svg
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
@@ -193,6 +194,14 @@
           var lengthArray = (app.shots.length - 1) * -1;
 
           if (n < lengthArray || n > 0) app.item = o;
+          if (app.item === lengthArray) {
+            app.$refs.next.classList.add("fadeOut");
+          } else if (app.item === 0) {
+            app.$refs.prev.classList.add("fadeOut");
+          } else {
+            app.$refs.prev.classList.remove("fadeOut");
+            app.$refs.next.classList.remove("fadeOut");
+          }
 
           app.$refs.carrusel.style.left = `${n * 100}%`;
         }
