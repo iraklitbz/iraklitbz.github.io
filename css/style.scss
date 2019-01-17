@@ -6,6 +6,16 @@ body {
   font-family: $font;
 }
 
+a {
+  color: $main-color;
+  transition: color 0.2s linear;
+  text-decoration: none;
+  font-weight: bold;
+  &:hover {
+    color: $main-color-lighter;
+  }
+}
+
 .main-grid {
   display: grid;
   grid-template-areas:
@@ -77,6 +87,31 @@ body {
   &:hover {
     svg {
       fill: $main-color-lighter;
+    }
+    .tooltip {
+      top: 54px;
+    }
+  }
+}
+
+.tooltip {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 106px);
+  top: -100%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba($white, 0.98);
+  z-index: 100;
+  font-size: 140px;
+  color: $dark-2;
+  font-style: normal;
+  left: 0%;
+  transition: top 0.2s ease-in;
+  ul {
+    li {
+      font-size: 60px;
     }
   }
 }
@@ -179,19 +214,25 @@ footer {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 27px;
   color: $dark-1;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  text-align: center;
 
   span {
     font-weight: bold;
   }
 }
 .me-story {
-  p {
-    font-size: 30px;
-    color: $dark-3;
+  font-size: 30px;
+  color: $dark-3;
+  display: block;
+  .special {
+    &:hover {
+      .tooltip {
+        top: 54px;
+      }
+    }
   }
 }
 
@@ -245,75 +286,6 @@ h1 {
   }
 }
 
-/*KEYFRAMES*/
-
-@-webkit-keyframes fadeInFromNone {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-
-  1% {
-    display: block;
-    opacity: 0;
-  }
-
-  100% {
-    display: block;
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fadeInFromNone {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-
-  1% {
-    display: block;
-    opacity: 0;
-  }
-
-  100% {
-    display: block;
-    opacity: 1;
-  }
-}
-
-@-o-keyframes fadeInFromNone {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-
-  1% {
-    display: block;
-    opacity: 0;
-  }
-
-  100% {
-    display: block;
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInFromNone {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-
-  1% {
-    display: block;
-    opacity: 0;
-  }
-
-  100% {
-    display: block;
-    opacity: 1;
-  }
-}
 @media (max-width: 979px) {
 }
 

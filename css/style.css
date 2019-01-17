@@ -39,6 +39,14 @@ body {
   background-color: #f3f3f3;
   font-family: "Dosis", sans-serif; }
 
+a {
+  color: #0098ed;
+  transition: color 0.2s linear;
+  text-decoration: none;
+  font-weight: bold; }
+  a:hover {
+    color: #12aaff; }
+
 .main-grid {
   display: grid;
   grid-template-areas: "sub-header sub-header sub-header sub-header sub-header" "main-header main-header main-me main-portfolio main-portfolio" "main-header main-header main-me main-portfolio main-portfolio" "main-header main-header main-me main-portfolio main-portfolio" "main-footer main-footer main-footer main-footer main-footer";
@@ -85,6 +93,26 @@ body {
   transition: fill 0.2s linear; }
 .icon:hover svg {
   fill: #12aaff; }
+.icon:hover .tooltip {
+  top: 54px; }
+
+.tooltip {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 106px);
+  top: -100%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.98);
+  z-index: 100;
+  font-size: 140px;
+  color: #444;
+  font-style: normal;
+  left: 0%;
+  transition: top 0.2s ease-in; }
+  .tooltip ul li {
+    font-size: 60px; }
 
 header {
   grid-area: main-header;
@@ -169,16 +197,19 @@ footer {
   width: 100%; }
 
 h1 {
-  font-size: 50px;
+  font-size: 27px;
   color: #333;
   text-transform: uppercase;
-  margin-bottom: 25px; }
+  text-align: center; }
   h1 span {
     font-weight: bold; }
 
-.me-story p {
+.me-story {
   font-size: 30px;
-  color: #555; }
+  color: #555;
+  display: block; }
+  .me-story .special:hover .tooltip {
+    top: 54px; }
 
 /*carrusel*/
 .controls {
@@ -220,47 +251,5 @@ h1 {
     border-radius: 10px;
     font-size: 20px;
     color: #777; }
-
-/*KEYFRAMES*/
-@-webkit-keyframes fadeInFromNone {
-  0% {
-    display: none;
-    opacity: 0; }
-  1% {
-    display: block;
-    opacity: 0; }
-  100% {
-    display: block;
-    opacity: 1; } }
-@-moz-keyframes fadeInFromNone {
-  0% {
-    display: none;
-    opacity: 0; }
-  1% {
-    display: block;
-    opacity: 0; }
-  100% {
-    display: block;
-    opacity: 1; } }
-@-o-keyframes fadeInFromNone {
-  0% {
-    display: none;
-    opacity: 0; }
-  1% {
-    display: block;
-    opacity: 0; }
-  100% {
-    display: block;
-    opacity: 1; } }
-@keyframes fadeInFromNone {
-  0% {
-    display: none;
-    opacity: 0; }
-  1% {
-    display: block;
-    opacity: 0; }
-  100% {
-    display: block;
-    opacity: 1; } }
 
 /*# sourceMappingURL=style.css.map */
